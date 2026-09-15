@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nailed It Private Nail Studio | Russian Manicure Expert – Nişantaşı İstanbul</title>
+<meta name="description" content="Nailed It Private Nail Studio – Russian Manikür Uzmanı. Tek kişilik özel stüdyoda lüks, hijyenik ve sanatsal tırnak bakımı. Hemen WhatsApp ile randevu alın.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        nude: '#F4E8EB',
+        beige: '#E8D5C4',
+        champagne: '#D4AF37',
+        rosegold: '#E0A96D',
+        anthracite: '#2B232A',
+        cream: '#FAFAFA',
+        blush: '#F9F1F3',
+        plum: '#4A3547',
+        goldlight: '#F6E8B5'
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+        sans: ['Jost', 'Montserrat', 'sans-serif'],
+      },
+      boxShadow: {
+        luxe: '0 20px 60px -15px rgba(43,35,42,0.18)',
+        gold: '0 10px 30px -8px rgba(212,175,55,0.45)',
+        card: '0 8px 32px rgba(43,35,42,0.08)'
+      }
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#FAFAFA;color:#2B232A;font-family:'Jost',sans-serif;overflow-x:hidden}
+  .serif{font-family:'Cormorant Garamond',serif}
+  .gold-text{background:linear-gradient(105deg,#9c7a1a 0%,#D4AF37 25%,#F6E8B5 50%,#D4AF37 75%,#9c7a1a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:shine 5s linear infinite}
+  @keyframes shine{to{background-position:200% center}}
+  .gold-line{background:linear-gradient(90deg,transparent,#D4AF37,transparent);height:1px}
+  .arch{border-radius:999px 999px 24px 24px}
+  .pulse-dot{position:relative}
+  .pulse-dot::after{content:'';position:absolute;inset:-6px;border-radius:9999px;border:2px solid #22c55e;animation:ping 1.6s cubic-bezier(0,0,.2,1) infinite}
+  @keyframes ping{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.4);opacity:0}}
+  .pulse-dot.closed::after{border-color:#ef4444}
+  .float-slow{animation:float 6s ease-in-out infinite}
+  .float-slower{animation:float 8s ease-in-out infinite reverse}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  .marquee-track{display:flex;gap:3rem;animation:marquee 22s linear infinite;width:max-content}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+  .reveal{opacity:0;transform:translateY(28px);transition:all .9s cubic-bezier(.22,1,.36,1)}
+  .reveal.visible{opacity:1;transform:none}
+  .glass{background:rgba(255,255,255,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .slot-btn{transition:all .25s}
+  .slot-btn.selected{background:#2B232A!important;color:#fff!important;border-color:#2B232A!important;box-shadow:0 8px 20px rgba(43,35,42,.25)}
+  .slot-btn.booked{opacity:.35;text-decoration:line-through;pointer-events:none;background:#f3f3f3}
+  .service-pill.selected{background:#2B232A;color:#fff;border-color:#2B232A}
+  .faq-answer{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,1,.36,1)}
+  .faq-item.open .faq-answer{max-height:400px}
+  .faq-item.open .faq-icon{transform:rotate(45deg);background:#2B232A;color:#fff}
+  .faq-icon{transition:all .3s}
+  .testi-track{transition:transform .6s cubic-bezier(.22,1,.36,1)}
+  .no-scrollbar::-webkit-scrollbar{display:none}
+  .no-scrollbar{scrollbar-width:none}
+  .grain::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");pointer-events:none}
+  .input-luxe{background:#fff;border:1px solid #E8D5C4;border-radius:14px;padding:.9rem 1rem;width:100%;outline:none;transition:all .25s;font-size:.95rem}
+  .input-luxe:focus{border-color:#D4AF37;box-shadow:0 0 0 4px rgba(212,175,55,.15)}
+  .input-luxe.error{border-color:#ef4444;box-shadow:0 0 0 4px rgba(239,68,68,.12)}
+  .btn-gold{background:linear-gradient(135deg,#2B232A 0%,#4A3547 50%,#2B232A 100%);position:relative;overflow:hidden}
+  .btn-gold::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(212,175,55,.5),transparent);transform:skewX(-20deg);transition:left .6s}
+  .btn-gold:hover::after{left:130%}
+  .sparkle{position:absolute;color:#D4AF37;opacity:.6;animation:twinkle 2.8s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8) rotate(0)}50%{opacity:.9;transform:scale(1.15) rotate(20deg)}}
+  #progressBar{transform-origin:left}
+  .nav-link{position:relative}
+  .nav-link::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;background:#D4AF37;transition:width .3s}
+  .nav-link:hover::after,.nav-link.active::after{width:100%}
+  .nav-link.active{color:#9c7a1a}
+  @media(max-width:768px){.arch{border-radius:200px 200px 20px 20px}}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- SCROLL PROGRESS -->
+<div class="fixed top-0 left-0 right-0 h-[3px] z-[100] bg-transparent"><div id="progressBar" class="h-full w-full bg-gradient-to-r from-champagne via-rosegold to-champagne scale-x-0"></div></div>
+
+<!-- TOP LIVE BADGE -->
+<div class="bg-anthracite text-white text-[12px] sm:text-[13px] relative z-[60]">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <span id="openDot" class="pulse-dot w-2.5 h-2.5 rounded-full bg-green-400 shrink-0 inline-block"></span>
+      <p class="truncate tracking-wide font-light">
+        <span class="font-medium tracking-[0.12em] uppercase text-goldlight">Open for Bookings</span>
+        <span class="mx-2 text-white/30">|</span>
+        <span id="openText" class="text-white/90">Canlı Randevu Alabilirsiniz</span>
+      </p>
+    </div>
+    <div class="hidden sm:flex items-center gap-4 text-white/70 font-light">
+      <span class="flex items-center gap-1.5"><i class="fa-regular fa-clock text-champagne"></i><span id="liveClock">--:--</span> İstanbul</span>
+      <a href="tel:+905352345678" class="flex items-center gap-1.5 hover:text-white transition"><i class="fa-solid fa-phone text-champagne text-[11px]"></i> 0535 234 56 78</a>
+      <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <a href="#randevu" class="sm:hidden shrink-0 bg-champagne text-anthracite px-3 py-1 rounded-full font-medium text-[11px] tracking-wide">RANDEVU AL</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header" class="sticky top-0 z-50 transition-all duration-300 bg-cream/90 glass border-b border-beige/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-[72px] lg:h-[84px]">
+    <a href="#anasayfa" class="flex items-center gap-3 group">
+      <div class="relative">
+        <img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" alt="Nailed It Logo" class="w-12 h-12 lg:w-14 lg:h-14 rounded-full object-cover ring-2 ring-champagne/60 ring-offset-2 ring-offset-cream group-hover:ring-champagne transition">
+        <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-anthracite rounded-full flex items-center justify-center border-2 border-cream"><i class="fa-solid fa-crown text-[9px] text-champagne"></i></span>
+      </div>
+      <div class="leading-none">
+        <h1 class="serif text-[26px] lg:text-[30px] font-semibold tracking-tight">Nailed <span class="italic font-medium">It</span></h1>
+        <p class="text-[9px] lg:text-[10px] tracking-[0.32em] uppercase text-anthracite/70 font-medium">Private Nail Studio</p>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-[13.5px] tracking-[0.08em] uppercase font-medium text-anthracite/80">
+      <a href="#anasayfa" class="nav-link active" data-spy="anasayfa">Anasayfa</a>
+      <a href="#hakkimizda" class="nav-link" data-spy="hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler" class="nav-link" data-spy="hizmetler">Hizmetler</a>
+      <a href="#galeri" class="nav-link" data-spy="galeri">Galeri</a>
+      <a href="#yorumlar" class="nav-link" data-spy="yorumlar">Yorumlar</a>
+      <a href="#sss" class="nav-link" data-spy="sss">SSS</a>
+      <a href="#iletisim" class="nav-link" data-spy="iletisim">İletişim</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="https://wa.me/905352345678?text=Merhaba%20Nailed%20It!%20Randevu%20almak%20istiyorum." target="_blank" class="w-11 h-11 rounded-full border border-beige flex items-center justify-center hover:bg-green-500 hover:text-white hover:border-green-500 transition"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+      <a href="#randevu" class="btn-gold text-white pl-5 pr-6 py-3 rounded-full text-[13px] tracking-[0.12em] uppercase font-medium flex items-center gap-2 shadow-gold"><i class="fa-regular fa-calendar-check text-champagne"></i> Randevu Al</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-full bg-anthracite text-white flex items-center justify-center"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div id="mobileMenu" class="fixed inset-0 z-[90] hidden">
+  <div id="menuOverlay" class="absolute inset-0 bg-anthracite/60 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+  <div id="menuPanel" class="absolute right-0 top-0 h-full w-[86%] max-w-sm bg-cream shadow-luxe translate-x-full transition-transform duration-400 flex flex-col" style="transition-duration:.4s">
+    <div class="p-6 flex items-center justify-between border-b border-beige/70">
+      <div class="flex items-center gap-3">
+        <img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" class="w-11 h-11 rounded-full object-cover ring-2 ring-champagne" alt="logo">
+        <div><p class="serif text-xl font-semibold leading-none">Nailed It</p><p class="text-[9px] tracking-[0.3em] uppercase opacity-60">Private Nail Studio</p></div>
+      </div>
+      <button id="menuClose" class="w-10 h-10 rounded-full bg-anthracite text-white"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="p-6 flex flex-col gap-1 text-[15px] font-medium tracking-wide">
+      <a href="#anasayfa" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center">Anasayfa <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+      <a href="#randevu" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center text-[#9c7a1a]">Randevu Al <i class="fa-solid fa-chevron-right text-xs"></i></a>
+      <a href="#hakkimizda" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center">Hakkımızda <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+      <a href="#hizmetler" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center">Hizmetler & Fiyatlar <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+      <a href="#galeri" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center">Galeri <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+      <a href="#yorumlar" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center">Yorumlar <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+      <a href="#sss" class="mob-link py-3 border-b border-beige/60 flex justify-between items-center">SSS <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+      <a href="#iletisim" class="mob-link py-3 flex justify-between items-center">İletişim <i class="fa-solid fa-chevron-right text-xs text-champagne"></i></a>
+    </nav>
+    <div class="mt-auto p-6 bg-anthracite text-white">
+      <p class="text-xs tracking-[0.2em] uppercase text-champagne mb-2">Hemen Ulaşın</p>
+      <a href="tel:+905352345678" class="serif text-2xl">0535 234 56 78</a>
+      <div class="flex gap-2 mt-4">
+        <a href="https://wa.me/905352345678" target="_blank" class="flex-1 bg-[#25D366] rounded-xl py-3 text-center font-medium text-sm"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp</a>
+        <a href="#randevu" class="mob-link flex-1 bg-champagne text-anthracite rounded-xl py-3 text-center font-medium text-sm">Randevu Al</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="anasayfa" class="relative overflow-hidden grain">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-nude blur-[100px] opacity-80"></div>
+    <div class="absolute top-20 right-[-100px] w-[550px] h-[550px] rounded-full bg-beige/60 blur-[110px]"></div>
+    <div class="absolute bottom-0 left-1/3 w-[400px] h-[300px] bg-goldlight/40 blur-[90px] rounded-full"></div>
+  </div>
+  <span class="sparkle top-[18%] left-[8%] text-xl">✦</span>
+  <span class="sparkle top-[32%] left-[46%] text-sm" style="animation-delay:.8s">✦</span>
+  <span class="sparkle top-[14%] right-[12%] text-2xl" style="animation-delay:1.4s">✦</span>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 lg:pt-14 pb-12 lg:pb-20 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center relative">
+    <!-- LEFT -->
+    <div class="reveal visible">
+      <div class="inline-flex items-center gap-2 bg-white border border-beige rounded-full pl-1.5 pr-4 py-1.5 shadow-card mb-6">
+        <span class="bg-anthracite text-champagne text-[11px] tracking-[0.15em] uppercase px-3 py-1.5 rounded-full font-medium">★ Russian Expert</span>
+        <span class="text-[13px] text-anthracite/70 tracking-wide">Nişantaşı • Tek Kişilik Özel Stüdyo</span>
+      </div>
+      <h2 class="serif text-[44px] leading-[0.95] sm:text-[64px] lg:text-[76px] font-medium tracking-tight">
+        Tırnak bakımı<br>
+        bir <span class="italic gold-text font-semibold">sanatsa,</span><br>
+        biz sanatçıyız.
+      </h2>
+      <p class="mt-5 text-[16px] lg:text-[18px] text-anthracite/70 font-light leading-relaxed max-w-xl">“Where Nail Care is a Creative Art Form.” sterile, sakin ve tamamen size özel bir stüdyoda <strong class="font-medium text-anthracite">Russian Manikür</strong> mükemmelliği. Kalıcı oje, protez ve nail art — hepsi tek koltukta.</p>
+
+      <div class="flex flex-col sm:flex-row gap-3 mt-8">
+        <a href="#randevu" class="btn-gold text-white rounded-full px-8 py-4 text-center font-medium tracking-wide flex items-center justify-center gap-3 shadow-luxe text-[15px]"><i class="fa-brands fa-whatsapp text-xl text-[#25D366] bg-white rounded-full w-8 h-8 flex items-center justify-center"></i> WhatsApp ile Randevu Al <i class="fa-solid fa-arrow-right text-champagne text-sm"></i></a>
+        <a href="#hizmetler" class="rounded-full px-8 py-4 text-center font-medium tracking-wide border border-anthracite/20 bg-white/70 hover:bg-white hover:border-champagne transition flex items-center justify-center gap-2 text-[15px]">Hizmetleri Keşfet <span class="text-champagne">✦</span></a>
+      </div>
+
+      <div class="flex items-center gap-4 mt-8">
+        <div class="flex -space-x-3">
+          <div class="w-11 h-11 rounded-full border-[3px] border-cream bg-gradient-to-br from-nude to-beige flex items-center justify-center font-serif font-bold text-plum">E</div>
+          <div class="w-11 h-11 rounded-full border-[3px] border-cream bg-anthracite text-champagne flex items-center justify-center font-serif font-bold">S</div>
+          <div class="w-11 h-11 rounded-full border-[3px] border-cream bg-gradient-to-br from-champagne to-rosegold flex items-center justify-center font-serif font-bold text-white">M</div>
+          <div class="w-11 h-11 rounded-full border-[3px] border-cream bg-white flex items-center justify-center text-[11px] font-semibold">500+</div>
+        </div>
+        <div>
+          <div class="flex items-center gap-1 text-champagne text-sm">★★★★★ <span class="text-anthracite font-semibold ml-1">4.9/5</span></div>
+          <p class="text-[13px] text-anthracite/60">3.500+ mutlu danışandan 500+ Google yorumu</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-3 mt-8 max-w-lg">
+        <div class="bg-white/80 border border-beige/70 rounded-2xl p-3 text-center"><i class="fa-solid fa-shield-halved text-champagne mb-1"></i><p class="text-[12px] font-medium leading-tight">%100 Steril<br><span class="font-light opacity-60">Otklav + Tek Kullanımlık</span></p></div>
+        <div class="bg-white/80 border border-beige/70 rounded-2xl p-3 text-center"><i class="fa-solid fa-user-lock text-champagne mb-1"></i><p class="text-[12px] font-medium leading-tight">Birebir Seans<br><span class="font-light opacity-60">Bekleme Yok</span></p></div>
+        <div class="bg-white/80 border border-beige/70 rounded-2xl p-3 text-center"><i class="fa-solid fa-gem text-champagne mb-1"></i><p class="text-[12px] font-medium leading-tight">Premium Ürün<br><span class="font-light opacity-60">Luxio • OPI • Kodi</span></p></div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="relative flex justify-center lg:justify-end reveal visible">
+      <div class="relative w-full max-w-[440px]">
+        <div class="absolute inset-0 translate-x-4 translate-y-4 arch border border-champagne/60"></div>
+        <div class="arch overflow-hidden border-[6px] border-white shadow-luxe relative bg-nude">
+          <img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" alt="Nailed It Private Nail Studio" class="w-full aspect-[4/5] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-anthracite/35 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 glass rounded-2xl p-4 flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=200&auto=format&fit=crop" class="w-14 h-14 rounded-xl object-cover" alt="nails">
+            <div class="flex-1"><p class="serif italic text-[17px] leading-none">“Where Nail Care is a Creative Art Form.”</p><p class="text-[11px] tracking-[0.2em] uppercase opacity-60 mt-1">Nailed It • Est. 2019</p></div>
+          </div>
+        </div>
+        <!-- floating cards -->
+        <div class="float-slow absolute -left-4 sm:-left-10 top-10 bg-white rounded-2xl shadow-luxe p-3.5 flex items-center gap-3 border border-beige/60">
+          <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center"><span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span></div>
+          <div><p class="text-[11px] uppercase tracking-[0.15em] text-green-700 font-semibold">Müsaitlik</p><p id="nextSlotLabel" class="text-[13.5px] font-medium">Bugün 15:00 • Yarın 11:00</p></div>
+        </div>
+        <div class="float-slower absolute -right-2 sm:-right-6 bottom-28 bg-anthracite text-white rounded-2xl shadow-luxe p-4 border border-champagne/40 w-[170px]">
+          <p class="serif italic text-champagne text-[15px]">Russian Manikür</p>
+          <p class="text-[12px] text-white/70 font-light leading-snug mt-1">Pürüzsüz kütikül • 3-4 hafta kalıcılık</p>
+          <div class="gold-line my-2.5"></div>
+          <p class="text-[13px]"><span class="line-through opacity-50 text-[12px]">₺1.400</span> <span class="font-semibold text-goldlight">₺1.200</span></p>
+        </div>
+        <div class="absolute -top-4 right-8 bg-white rounded-full shadow-gold px-4 py-2 flex items-center gap-2 border border-champagne/40 text-[13px] font-medium"><i class="fa-solid fa-award text-champagne"></i> En İyi Stüdyo 2025</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="border-y border-beige/70 bg-white/70 py-3 overflow-hidden">
+    <div class="marquee-track text-[12px] tracking-[0.25em] uppercase text-anthracite/60 font-medium">
+      <span>✦ Russian Manikür</span><span>✦ Protez Tırnak</span><span>✦ Jel Güçlendirme</span><span>✦ Kalıcı Oje</span><span>✦ Nail Art</span><span>✦ Luxury Pedikür</span><span>✦ Russian Manikür</span><span>✦ Protez Tırnak</span><span>✦ Jel Güçlendirme</span><span>✦ Kalıcı Oje</span><span>✦ Nail Art</span><span>✦ Luxury Pedikür</span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="text-center reveal"><p class="serif text-4xl lg:text-5xl font-semibold"><span data-count="6">0</span>+</p><p class="text-[12px] tracking-[0.2em] uppercase opacity-60 mt-1">Yıllık Uzmanlık</p></div>
+    <div class="text-center reveal"><p class="serif text-4xl lg:text-5xl font-semibold"><span data-count="3500">0</span>+</p><p class="text-[12px] tracking-[0.2em] uppercase opacity-60 mt-1">Mutlu Müşteri</p></div>
+    <div class="text-center reveal"><p class="serif text-4xl lg:text-5xl font-semibold">4.<span data-count="9">0</span></p><p class="text-[12px] tracking-[0.2em] uppercase opacity-60 mt-1">Google Puanı</p></div>
+    <div class="text-center reveal"><p class="serif text-4xl lg:text-5xl font-semibold">%<span data-count="100">0</span></p><p class="text-[12px] tracking-[0.2em] uppercase opacity-60 mt-1">Hijyen Garantisi</p></div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="randevu" class="relative py-14 lg:py-20 px-4 sm:px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-[12px] tracking-[0.3em] uppercase text-[#9c7a1a] font-medium">✦ Online Randevu ✦</p>
+      <h2 class="serif text-4xl sm:text-5xl lg:text-6xl font-medium mt-3">60 saniyede <span class="italic gold-text">randevunuzu</span> oluşturun</h2>
+      <p class="text-anthracite/60 font-light mt-4">Formu doldurun, önizlemeyi kontrol edin, tek dokunuşla WhatsApp’tan onaylayın. Kapora yok, bekleme yok.</p>
+    </div>
+
+    <div class="mt-10 bg-white rounded-[28px] shadow-luxe overflow-hidden grid lg:grid-cols-[380px_1fr] border border-beige/60 reveal">
+      <!-- LEFT INFO -->
+      <div class="bg-anthracite text-white p-8 lg:p-10 relative overflow-hidden grain">
+        <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-champagne/20 blur-[60px]"></div>
+        <img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" class="w-16 h-16 rounded-full object-cover ring-2 ring-champagne mb-5" alt="logo">
+        <h3 class="serif text-3xl leading-tight">Özel koltuğunuz <span class="italic text-champagne">sizi bekliyor</span></h3>
+        <div class="mt-6 space-y-4 text-[14px] font-light">
+          <div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-champagne font-serif font-bold">1</div><p><strong class="font-medium">Hizmetinizi seçin</strong><br><span class="text-white/60">Aşağıdan tek dokunuşla seçin, fiyat otomatik hesaplansın.</span></p></div>
+          <div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-champagne font-serif font-bold">2</div><p><strong class="font-medium">Gün & saat belirleyin</strong><br><span class="text-white/60">Gerçek zamanlı doluluk — üstü çizili saatler dolu.</span></p></div>
+          <div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-champagne font-serif font-bold">3</div><p><strong class="font-medium">WhatsApp ile onaylayın</strong><br><span class="text-white/60">Bilgileriniz hazır mesaj olarak iletilir.</span></p></div>
+        </div>
+        <div class="gold-line my-6 opacity-40"></div>
+        <div class="space-y-2.5 text-[14px]">
+          <p class="flex items-center gap-2.5 text-white/80"><i class="fa-regular fa-clock text-champagne"></i> Pzt – Cmt: 10:00 – 20:00</p>
+          <p class="flex items-center gap-2.5 text-white/80"><i class="fa-regular fa-clock text-champagne"></i> Pazar: 11:00 – 18:00 (randevulu)</p>
+          <p class="flex items-center gap-2.5 text-white/80"><i class="fa-solid fa-location-dot text-champagne"></i> Teşvikiye Cad. No:12, Nişantaşı</p>
+        </div>
+        <div class="mt-6 bg-white/8 border border-white/15 rounded-2xl p-4 bg-white/5">
+          <p class="text-[12px] tracking-[0.2em] uppercase text-champagne">Bu haftanın durumu</p>
+          <div class="flex items-center justify-between mt-2"><span class="text-sm text-white/70">Kalan slot</span><span class="font-semibold">3 slot kaldı ⚡</span></div>
+          <div class="h-2 bg-white/10 rounded-full mt-2 overflow-hidden"><div class="h-full w-[82%] bg-gradient-to-r from-champagne to-rosegold rounded-full"></div></div>
+          <p id="countdown" class="text-[12px] text-white/60 mt-2 font-light">Cumartesi 20:00’e kadar: --:--:--</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="p-6 sm:p-8 lg:p-10 bg-gradient-to-b from-blush/60 to-white">
+        <form id="bookForm" novalidate>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="text-[12px] tracking-[0.15em] uppercase font-medium opacity-70">Ad Soyad *</label><input id="fName" type="text" placeholder="Adınız Soyadınız" class="input-luxe mt-1.5"><p class="err text-red-500 text-xs mt-1 hidden">Lütfen adınızı girin.</p></div>
+            <div><label class="text-[12px] tracking-[0.15em] uppercase font-medium opacity-70">Telefon *</label><input id="fPhone" type="tel" placeholder="05__ ___ __ __" maxlength="14" class="input-luxe mt-1.5"><p class="err text-red-500 text-xs mt-1 hidden">Geçerli bir telefon girin (05...).</p></div>
+          </div>
+
+          <div class="mt-5"><label class="text-[12px] tracking-[0.15em] uppercase font-medium opacity-70">Hizmet Seçin *</label>
+            <div id="servicePills" class="flex flex-wrap gap-2 mt-2"></div>
+            <p id="serviceErr" class="text-red-500 text-xs mt-1 hidden">Lütfen bir hizmet seçin.</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 mt-5">
+            <div><label class="text-[12px] tracking-[0.15em] uppercase font-medium opacity-70">Tarih *</label><input id="fDate" type="date" class="input-luxe mt-1.5"><p class="err text-red-500 text-xs mt-1 hidden">Lütfen ileri bir tarih seçin.</p></div>
+            <div><label class="text-[12px] tracking-[0.15em] uppercase font-medium opacity-70">Not (opsiyonel)</label><input id="fNote" type="text" placeholder="Renk / model isteği, alerji..." class="input-luxe mt-1.5"></div>
+          </div>
+
+          <div class="mt-5"><label class="text-[12px] tracking-[0.15em] uppercase font-medium opacity-70">Saat Seçin * <span id="dateHint" class="normal-case tracking-normal font-light opacity-60 ml-1">— önce tarih seçin</span></label>
+            <div id="slots" class="grid grid-cols-3 sm:grid-cols-5 gap-2 mt-2"></div>
+            <p id="slotErr" class="text-red-500 text-xs mt-1 hidden">Lütfen bir saat seçin.</p>
+          </div>
+
+          <!-- SUMMARY -->
+          <div class="mt-6 bg-cream border border-beige rounded-2xl p-5 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+            <div class="flex-1">
+              <p class="text-[11px] tracking-[0.2em] uppercase opacity-60 font-medium">Randevu Önizleme</p>
+              <p id="summaryText" class="serif italic text-[18px] leading-snug mt-1 text-anthracite/70">Hizmet, tarih ve saat seçtiğinizde özet burada görünecek...</p>
+              <p class="mt-2 text-sm"><span class="opacity-60 font-light">Tahmini süre:</span> <span id="summaryDur" class="font-medium">—</span> <span class="mx-2 opacity-20">|</span> <span class="opacity-60 font-light">Ücret:</span> <span id="summaryPrice" class="font-semibold text-[#9c7a1a]">—</span></p>
+            </div>
+            <div class="text-center shrink-0 bg-white border border-beige rounded-xl px-5 py-3"><p class="text-[11px] uppercase tracking-widest opacity-50">Toplam</p><p id="summaryTotal" class="serif text-3xl font-semibold">₺0</p></div>
+          </div>
+
+          <label class="flex items-start gap-2.5 mt-5 text-[13px] font-light text-anthracite/70 cursor-pointer"><input id="fKvkk" type="checkbox" class="mt-1 accent-[#D4AF37] w-4 h-4"> <span><strong class="font-medium text-anthracite">KVKK onayı*</strong> — Randevu amacıyla bilgilerimin WhatsApp üzerinden iletilmesini kabul ediyorum.</span></label>
+
+          <div class="flex flex-col sm:flex-row gap-3 mt-6">
+            <button type="submit" class="flex-1 btn-gold text-white rounded-full py-4 font-medium tracking-wide flex items-center justify-center gap-2 text-[15px]"><i class="fa-brands fa-whatsapp text-xl text-[#25D366]"></i> WhatsApp ile Onayla <i class="fa-solid fa-arrow-right text-champagne text-xs"></i></button>
+            <a href="tel:+905352345678" class="sm:w-[200px] rounded-full py-4 border border-anthracite/20 bg-white text-center font-medium hover:border-champagne transition flex items-center justify-center gap-2"><i class="fa-solid fa-phone text-sm text-champagne"></i> Hemen Ara</a>
+          </div>
+          <p class="text-center text-[12px] text-anthracite/50 font-light mt-3 flex items-center justify-center gap-1.5"><i class="fa-solid fa-lock text-[10px]"></i> Bilgileriniz sadece randevu için kullanılır, 3. kişilerle paylaşılmaz.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="hakkimizda" class="py-14 lg:py-20 bg-white border-y border-beige/60 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="relative reveal order-2 lg:order-1">
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=600&auto=format&fit=crop" class="rounded-[22px] object-cover aspect-[3/4] shadow-card" alt="studio">
+        <div class="space-y-4 pt-8">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=600&auto=format&fit=crop" class="rounded-[22px] object-cover aspect-square shadow-card" alt="manicure">
+          <div class="bg-anthracite text-white rounded-[22px] p-5 relative overflow-hidden">
+            <img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" class="absolute right-[-20px] bottom-[-20px] w-28 h-28 rounded-full object-cover opacity-20" alt="">
+            <p class="serif italic text-xl leading-tight">“Her tırnak,<br>küçük bir tuval.”</p>
+            <p class="text-[11px] tracking-[0.2em] uppercase text-champagne mt-2">— Kurucu Nail Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -bottom-4 left-6 bg-white border border-beige rounded-2xl shadow-luxe px-5 py-3 flex items-center gap-3"><div class="w-11 h-11 rounded-full bg-nude flex items-center justify-center"><i class="fa-solid fa-pump-medical text-plum"></i></div><div><p class="font-semibold text-[14px]">Hastane Seviyesi Sterilizasyon</p><p class="text-[12px] opacity-60 font-light">Otklav + 4 aşamalı dezenfeksiyon</p></div></div>
+    </div>
+    <div class="reveal order-1 lg:order-2">
+      <p class="text-[12px] tracking-[0.3em] uppercase text-[#9c7a1a] font-medium">✦ Hakkımızda</p>
+      <h2 class="serif text-4xl sm:text-5xl font-medium mt-3 leading-[1.05]">Butik, sakin ve <span class="italic gold-text">tamamen size özel</span> bir deneyim</h2>
+      <p class="mt-5 text-anthracite/70 font-light leading-relaxed">Nailed It, kalabalık salonların tersine <strong class="font-medium text-anthracite">tek kişilik private stüdyo</strong> konseptiyle çalışır. Seansınız boyunca stüdyoda yalnızca siz olursunuz — müzik, çay, sohbet ve tüm dikkat size aittir. Russian (kombine/kuru) manikür tekniğinde uzmanız: e-file ile kütikül altı pürüzsüzlük, lifting yapmayan kalıcı oje, doğal görünümlü protez.</p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-7">
+        <div class="border border-beige rounded-2xl p-4 bg-cream flex gap-3"><i class="fa-solid fa-wand-magic-sparkles text-champagne mt-1"></i><div><p class="font-medium text-[15px]">Russian Tekniği Uzmanlığı</p><p class="text-[13px] font-light opacity-60">6 yıl, 3.500+ set deneyimi, sürekli eğitim.</p></div></div>
+        <div class="border border-beige rounded-2xl p-4 bg-cream flex gap-3"><i class="fa-solid fa-heart text-champagne mt-1"></i><div><p class="font-medium text-[15px]">Tırnak Sağlığı Önceliği</p><p class="text-[13px] font-light opacity-60">İnceltmeden güçlendirme, doğru ürün eşleşmesi.</p></div></div>
+        <div class="border border-beige rounded-2xl p-4 bg-cream flex gap-3"><i class="fa-solid fa-leaf text-champagne mt-1"></i><div><p class="font-medium text-[15px]">Premium & Vegan Seçenekler</p><p class="text-[13px] font-light opacity-60">Luxio, OPI, HEMA-free ürün gamı.</p></div></div>
+        <div class="border border-beige rounded-2xl p-4 bg-cream flex gap-3"><i class="fa-solid fa-bell-concierge text-champagne mt-1"></i><div><p class="font-medium text-[15px]">Bakım Sonrası Destek</p><p class="text-[13px] font-light opacity-60">7 gün ücretsiz kontrol & WhatsApp hattı.</p></div></div>
+      </div>
+      <div class="flex flex-wrap gap-3 mt-7">
+        <a href="#randevu" class="bg-anthracite text-white px-7 py-3.5 rounded-full text-sm tracking-wide font-medium hover:bg-plum transition">Beni de Ağırlayın</a>
+        <a href="#galeri" class="px-7 py-3.5 rounded-full text-sm font-medium border border-beige bg-white hover:border-champagne transition">İşlerimizi Görün</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="hizmetler" class="py-14 lg:py-20 px-4 sm:px-6 relative">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 reveal">
+      <div class="max-w-xl"><p class="text-[12px] tracking-[0.3em] uppercase text-[#9c7a1a] font-medium">✦ Hizmetlerimiz & Fiyatlar</p><h2 class="serif text-4xl sm:text-5xl lg:text-6xl font-medium mt-3">Menüden <span class="italic gold-text">ritüelinizi</span> seçin</h2><p class="text-anthracite/60 font-light mt-3">Tüm fiyatlara Russian manikür hazırlığı, şekillendirme ve bakım yağı dahildir. Nail art ayrıca fiyatlandırılır.</p></div>
+      <div class="flex flex-wrap gap-2" id="filterTabs">
+        <button data-filter="all" class="f-tab px-5 py-2.5 rounded-full text-[13px] font-medium bg-anthracite text-white transition">Tümü</button>
+        <button data-filter="manikur" class="f-tab px-5 py-2.5 rounded-full text-[13px] font-medium bg-white border border-beige hover:border-champagne transition">Manikür</button>
+        <button data-filter="protez" class="f-tab px-5 py-2.5 rounded-full text-[13px] font-medium bg-white border border-beige hover:border-champagne transition">Protez & Jel</button>
+        <button data-filter="bakim" class="f-tab px-5 py-2.5 rounded-full text-[13px] font-medium bg-white border border-beige hover:border-champagne transition">Bakım & Art</button>
+      </div>
+    </div>
+    <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10"></div>
+    <p class="text-center text-[13px] text-anthracite/50 font-light mt-8">* Fiyatlar Şubat 2026 itibarıyla geçerlidir. Öğrenci ve iki arkadaş birlikte gelişlerde %10 avantaj için WhatsApp’tan yazın.</p>
+  </div>
+</section>
+
+<!-- PROCESS + GALLERY -->
+<section id="galeri" class="py-14 lg:py-20 bg-blush/60 border-y border-beige/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center reveal"><p class="text-[12px] tracking-[0.3em] uppercase text-[#9c7a1a] font-medium">✦ Stüdyodan Kareler</p><h2 class="serif text-4xl sm:text-5xl font-medium mt-3">Her set, bir <span class="italic gold-text">imza</span></h2></div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-10 reveal" id="galleryGrid">
+      <button class="g-item group relative rounded-[20px] overflow-hidden aspect-[3/4] shadow-card" data-src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="nude nails"><span class="absolute inset-0 bg-gradient-to-t from-anthracite/60 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-sm font-light"><i class="fa-solid fa-expand mr-2"></i>Milky Nude + Russian</span></button>
+      <button class="g-item group relative rounded-[20px] overflow-hidden aspect-[3/4] shadow-card lg:mt-8" data-src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1000&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="red"><span class="absolute inset-0 bg-gradient-to-t from-anthracite/60 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-sm font-light"><i class="fa-solid fa-expand mr-2"></i>Cherry Red • Kalıcı Oje</span></button>
+      <button class="g-item group relative rounded-[20px] overflow-hidden aspect-[3/4] shadow-card" data-src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="french"><span class="absolute inset-0 bg-gradient-to-t from-anthracite/60 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-sm font-light"><i class="fa-solid fa-expand mr-2"></i>Micro French • Protez</span></button>
+      <button class="g-item group relative rounded-[20px] overflow-hidden aspect-[3/4] shadow-card lg:mt-8" data-src="https://images.unsplash.com/photo-1610992015762-45dca7fa2a9a?q=80&w=1000&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1610992015762-45dca7fa2a9a?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="art"><span class="absolute inset-0 bg-gradient-to-t from-anthracite/60 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-sm font-light"><i class="fa-solid fa-expand mr-2"></i>Gold Foil Nail Art</span></button>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
+      <div class="bg-white rounded-2xl p-5 border border-beige flex gap-3"><span class="serif text-3xl text-champagne font-semibold">01</span><div><p class="font-medium">WhatsApp’tan yazın</p><p class="text-[13px] font-light opacity-60">Form veya direkt mesaj — 5 dk içinde dönüş.</p></div></div>
+      <div class="bg-white rounded-2xl p-5 border border-beige flex gap-3"><span class="serif text-3xl text-champagne font-semibold">02</span><div><p class="font-medium">Koltuğunuz ayrılsın</p><p class="text-[13px] font-light opacity-60">Size özel saat, hatırlatma mesajı ile.</p></div></div>
+      <div class="bg-white rounded-2xl p-5 border border-beige flex gap-3"><span class="serif text-3xl text-champagne font-semibold">03</span><div><p class="font-medium">Ritüelin keyfini çıkarın</p><p class="text-[13px] font-light opacity-60">60–120 dk tam odak, kahve eşliğinde.</p></div></div>
+      <div class="bg-white rounded-2xl p-5 border border-beige flex gap-3"><span class="serif text-3xl text-champagne font-semibold">04</span><div><p class="font-medium">3 hafta garanti</p><p class="text-[13px] font-light opacity-60">Kalkma/atma olursa ücretsiz düzeltme.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="yorumlar" class="py-14 lg:py-20 px-4 sm:px-6 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row justify-between lg:items-end gap-4 reveal">
+      <div><p class="text-[12px] tracking-[0.3em] uppercase text-[#9c7a1a] font-medium">✦ Müşteri Yorumları</p><h2 class="serif text-4xl sm:text-5xl font-medium mt-3">Onlar anlatıyor, <span class="italic gold-text">tırnaklar konuşuyor</span></h2></div>
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2 bg-white border border-beige rounded-full px-4 py-2 text-sm"><span class="font-bold text-lg">G</span><span class="text-champagne">★★★★★</span><span class="font-medium">4.9</span><span class="opacity-50 font-light">• 500+ yorum</span></div>
+        <div class="flex gap-2"><button id="tPrev" class="w-11 h-11 rounded-full border border-beige bg-white hover:bg-anthracite hover:text-white transition"><i class="fa-solid fa-arrow-left text-sm"></i></button><button id="tNext" class="w-11 h-11 rounded-full bg-anthracite text-white hover:bg-plum transition"><i class="fa-solid fa-arrow-right text-sm"></i></button></div>
+      </div>
+    </div>
+    <div class="mt-8 reveal">
+      <div class="overflow-hidden -mx-2"><div id="tTrack" class="testi-track flex"></div></div>
+      <div id="tDots" class="flex justify-center gap-2 mt-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="sss" class="py-14 lg:py-20 bg-white border-y border-beige/60 px-4 sm:px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center reveal"><p class="text-[12px] tracking-[0.3em] uppercase text-[#9c7a1a] font-medium">✦ Sıkça Sorulan Sorular</p><h2 class="serif text-4xl sm:text-5xl font-medium mt-3">Aklınızda <span class="italic gold-text">kalmasın</span></h2></div>
+    <div id="faqList" class="mt-10 space-y-3 reveal"></div>
+    <div class="mt-8 bg-cream border border-beige rounded-2xl p-6 text-center reveal">
+      <p class="serif italic text-xl">Başka sorunuz mu var?</p>
+      <p class="text-sm font-light opacity-60 mt-1">Pazar dahil her gün 09:00–21:00 arası WhatsApp’tayız.</p>
+      <a href="https://wa.me/905352345678?text=Merhaba!%20Bir%20sorum%20var." target="_blank" class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-white px-7 py-3 rounded-full font-medium text-sm"><i class="fa-brands fa-whatsapp text-lg"></i> Hemen Sorun</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="px-4 sm:px-6 py-14">
+  <div class="max-w-7xl mx-auto bg-anthracite rounded-[28px] p-8 sm:p-12 lg:p-16 relative overflow-hidden grain reveal">
+    <img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" class="absolute -right-16 -bottom-16 w-72 h-72 sm:w-96 sm:h-96 rounded-full object-cover opacity-[0.14]" alt="">
+    <div class="absolute top-0 left-1/4 w-72 h-72 bg-champagne/20 blur-[80px] rounded-full"></div>
+    <div class="relative max-w-2xl">
+      <p class="text-[12px] tracking-[0.3em] uppercase text-champagne font-medium">✦ İlk ziyarete özel ✦</p>
+      <h2 class="serif text-white text-4xl sm:text-5xl lg:text-6xl font-medium mt-4 leading-[1.02]">İlk Russian manikürünüzde <span class="italic gold-text">%15 indirim</span></h2>
+      <p class="text-white/60 font-light mt-4">“ILK15” kodunu WhatsApp’ta iletin, indiriminiz anında tanımlansın. Şubat kontenjanı sınırlı.</p>
+      <div class="flex flex-col sm:flex-row gap-3 mt-8">
+        <a href="#randevu" class="bg-gradient-to-r from-champagne to-rosegold text-anthracite font-semibold px-8 py-4 rounded-full text-center tracking-wide">Hemen Randevu Oluştur</a>
+        <a href="https://www.instagram.com/" target="_blank" class="border border-white/20 text-white px-8 py-4 rounded-full text-center font-light hover:bg-white/10 transition"><i class="fa-brands fa-instagram mr-2 text-champagne"></i>@nailedit.istanbul</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="iletisim" class="bg-anthracite text-white pt-14 pb-28 md:pb-10 relative overflow-hidden grain">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+    <div>
+      <div class="flex items-center gap-3"><img src="https://www.designarena.ai/u/83e3f3d8-9a5c-4df2-a4ab-e39206511367" class="w-14 h-14 rounded-full object-cover ring-2 ring-champagne" alt="logo"><div><p class="serif text-2xl font-semibold leading-none">Nailed It</p><p class="text-[10px] tracking-[0.3em] uppercase text-champagne">Private Nail Studio</p></div></div>
+      <p class="text-white/60 font-light text-[14px] mt-4 leading-relaxed">Russian Manicure Expert. Nişantaşı’nda tek kişilik, hijyenik ve lüks butik tırnak stüdyosu.</p>
+      <div class="flex gap-2 mt-5">
+        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-champagne hover:text-anthracite transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/905352345678" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#25D366] transition"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-champagne hover:text-anthracite transition"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="tel:+905352345678" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-champagne hover:text-anthracite transition"><i class="fa-solid fa-phone text-sm"></i></a>
+      </div>
+    </div>
+    <div>
+      <p class="text-[12px] tracking-[0.25em] uppercase text-champagne font-medium">Hızlı Erişim</p>
+      <ul class="mt-4 space-y-2.5 text-[14px] font-light text-white/70">
+        <li><a href="#randevu" class="hover:text-white">→ Online Randevu</a></li>
+        <li><a href="#hizmetler" class="hover:text-white">→ Hizmetler & Fiyatlar</a></li>
+        <li><a href="#galeri" class="hover:text-white">→ Galeri</a></li>
+        <li><a href="#yorumlar" class="hover:text-white">→ Müşteri Yorumları</a></li>
+        <li><a href="#sss" class="hover:text-white">→ SSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[12px] tracking-[0.25em] uppercase text-champagne font-medium">İletişim</p>
+      <ul class="mt-4 space-y-3 text-[14px] font-light text-white/70">
+        <li class="flex gap-2.5"><i class="fa-solid fa-location-dot text-champagne mt-1"></i> Teşvikiye Cad. No:12 Kat:2<br>Nişantaşı / Şişli – İstanbul</li>
+        <li><a href="tel:+905352345678" class="flex gap-2.5 hover:text-white"><i class="fa-solid fa-phone text-champagne mt-1"></i> 0535 234 56 78</a></li>
+        <li><a href="mailto:merhaba@nailedit.com.tr" class="flex gap-2.5 hover:text-white"><i class="fa-solid fa-envelope text-champagne mt-1"></i> merhaba@nailedit.com.tr</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[12px] tracking-[0.25em] uppercase text-champagne font-medium">Çalışma Saatleri</p>
+      <div class="mt-4 bg-white/5 border border-white/10 rounded-2xl p-4 text-[13.5px] font-light">
+        <div class="flex justify-between py-1.5 border-b border-white/10"><span class="text-white/60">Pzt – Cmt</span><span>10:00 – 20:00</span></div>
+        <div class="flex justify-between py-1.5 border-b border-white/10"><span class="text-white/60">Pazar</span><span>11:00 – 18:00</span></div>
+        <div class="flex justify-between py-1.5"><span class="text-white/60">Durum</span><span id="footerStatus" class="text-green-400 font-medium">● Şu an açığız</span></div>
+      </div>
+      <form id="newsForm" class="mt-4 flex gap-2"><input id="newsInput" type="email" placeholder="E-posta ile kampanyalar" class="flex-1 bg-white/10 border border-white/15 rounded-full px-4 py-2.5 text-sm outline-none focus:border-champagne placeholder:text-white/40"><button class="w-11 h-11 rounded-full bg-champagne text-anthracite shrink-0 hover:bg-white transition"><i class="fa-solid fa-paper-plane text-sm"></i></button></form>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-2 text-[12px] font-light text-white/40 relative">
+    <p>© 2026 Nailed It Private Nail Studio. Tüm hakları saklıdır.</p>
+    <p class="serif italic text-white/50">“Where Nail Care is a Creative Art Form.” ✦</p>
+  </div>
+</footer>
+
+<!-- MOBILE BOTTOM BAR -->
+<div class="fixed bottom-0 left-0 right-0 z-[70] md:hidden glass border-t border-beige shadow-[0_-10px_30px_rgba(0,0,0,0.12)]" style="padding-bottom:env(safe-area-inset-bottom)">
+  <div class="grid grid-cols-3 gap-2 p-2.5">
+    <a href="tel:+905352345678" class="flex flex-col items-center gap-0.5 py-2 rounded-xl bg-white border border-beige text-anthracite"><i class="fa-solid fa-phone text-[15px]"></i><span class="text-[11px] font-medium">Ara</span></a>
+    <a href="https://wa.me/905352345678?text=Merhaba%20Nailed%20It!%20Randevu%20almak%20istiyorum." target="_blank" class="flex flex-col items-center gap-0.5 py-2 rounded-xl bg-[#25D366] text-white"><i class="fa-brands fa-whatsapp text-[17px]"></i><span class="text-[11px] font-medium">WhatsApp</span></a>
+    <a href="#randevu" class="flex flex-col items-center gap-0.5 py-2 rounded-xl bg-anthracite text-white"><i class="fa-regular fa-calendar-check text-[15px] text-champagne"></i><span class="text-[11px] font-medium">Randevu Al</span></a>
+  </div>
+</div>
+
+<!-- FLOATING -->
+<a href="https://wa.me/905352345678?text=Merhaba%20Nailed%20It!%20Randevu%20almak%20istiyorum." target="_blank" class="hidden md:flex fixed bottom-6 right-6 z-[70] w-14 h-14 rounded-full bg-[#25D366] text-white items-center justify-center text-2xl shadow-luxe hover:scale-110 transition group"><i class="fa-brands fa-whatsapp"></i><span class="absolute right-full mr-3 whitespace-nowrap bg-anthracite text-white text-xs px-3 py-2 rounded-full opacity-0 group-hover:opacity-100 transition pointer-events-none">Hemen yazın, 5 dk’da dönüş 💅</span><span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-[10px] flex items-center justify-center font-bold">1</span></a>
+<button id="toTop" class="fixed bottom-24 md:bottom-24 right-4 md:right-[88px] z-[70] w-11 h-11 rounded-full bg-white border border-beige shadow-card items-center justify-center hidden hover:bg-anthracite hover:text-white transition"><i class="fa-solid fa-arrow-up text-sm"></i></button>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[95] hidden items-center justify-center p-4"><div class="absolute inset-0 bg-anthracite/90 backdrop-blur-sm" data-close></div><button class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white text-anthracite z-10" data-close><i class="fa-solid fa-xmark"></i></button><button id="lbPrev" class="absolute left-3 sm:left-8 w-11 h-11 rounded-full bg-white/15 text-white backdrop-blur z-10 hover:bg-champagne hover:text-anthracite transition"><i class="fa-solid fa-chevron-left"></i></button><button id="lbNext" class="absolute right-3 sm:right-8 w-11 h-11 rounded-full bg-white/15 text-white backdrop-blur z-10 hover:bg-champagne hover:text-anthracite transition"><i class="fa-solid fa-chevron-right"></i></button><img id="lbImg" src="" class="relative max-h-[82vh] max-w-full rounded-2xl shadow-luxe object-contain" alt="galeri"></div>
+
+<!-- SUCCESS MODAL -->
+<div id="successModal" class="fixed inset-0 z-[96] hidden items-center justify-center p-4"><div class="absolute inset-0 bg-anthracite/70 backdrop-blur-sm" data-close-s></div><div class="relative bg-white rounded-[26px] max-w-md w-full p-8 text-center shadow-luxe overflow-hidden"><div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-champagne via-goldlight to-champagne"></div><div class="w-20 h-20 mx-auto rounded-full bg-green-50 flex items-center justify-center text-3xl text-green-500"><i class="fa-solid fa-check"></i></div><h3 class="serif text-3xl font-semibold mt-4">Harikasınız! ✨</h3><p class="text-sm font-light text-anthracite/60 mt-2">Randevu talebiniz WhatsApp’ta hazır. Gönder’e basmanız yeterli — stüdyoda görüşmek üzere!</p><div id="successDetail" class="bg-cream border border-beige rounded-2xl p-4 text-left text-[13.5px] mt-5 leading-relaxed"></div><a id="successWa" href="#" target="_blank" class="mt-5 flex items-center justify-center gap-2 bg-[#25D366] text-white rounded-full py-3.5 font-medium"><i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp’ta Gönder</a><button data-close-s class="mt-3 text-[13px] underline opacity-60">Kapat</button></div></div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-24 md:bottom-8 z-[97] bg-anthracite text-white px-5 py-3.5 rounded-2xl shadow-luxe text-sm items-center gap-2.5 hidden max-w-[92vw]"><i class="fa-solid fa-circle-check text-green-400"></i><span id="toastMsg"></span></div>
+
+<script>
+const WA_NUMBER = '905352345678';
+const SERVICES = [
+  {id:'russian', name:'Russian Manikür', cat:'manikur', desc:'E-file ile kütikül altı pürüzsüzlük, şekil + kalıcı oje bazı. Lifting yok, 3-4 hafta kusursuzluk.', dur:'60 dk', price:1200, old:1400, icon:'fa-wand-magic-sparkles', badge:'En Popüler'},
+  {id:'protez', name:'Protez Tırnak + Russian', cat:'protez', desc:'Jel / polygel ile hayalinizdeki boy. İnce, doğal, kırılmayan yapı + dilediğiniz renk.', dur:'120 dk', price:2200, old:null, icon:'fa-gem', badge:null},
+  {id:'jel', name:'Jel Güçlendirme', cat:'protez', desc:'Kendi tırnağınız uzasın, kırılmasın. Doğal tırnak üzerine esnek jel zırh + kalıcı oje.', dur:'90 dk', price:1800, old:null, icon:'fa-shield-halved', badge:'Tavsiye'},
+  {id:'kalici', name:'Kalıcı Oje + Bakım', cat:'manikur', desc:'Russian hazırlık + Luxio / OPI renk + besleyici bakım. Çıkarma ve onarım dahil.', dur:'60 dk', price:1000, old:null, icon:'fa-palette', badge:null},
+  {id:'pedikur', name:'Luxury Russian Pedikür', cat:'bakim', desc:'Spa + Russian pedikür, topuk bakımı, peeling ve masaj. Sandalet sezonu hazır.', dur:'75 dk', price:1400, old:1600, icon:'fa-spa', badge:null},
+  {id:'nailart', name:'Nail Art & Design', cat:'bakim', desc:'French, aura, chrome, 3D, el çizimi... Pinterest panonuzu getirin, birebir uygulayalım.', dur:'30 dk+', price:400, old:null, icon:'fa-pen-nib', badge:'Yeni'},
+];
+const TESTIS = [
+  {n:'Elif K.', s:'Russian Manikür', t:'Hayatımda ilk kez kütiküllerim bu kadar temiz göründü. 4 hafta tek bir kalkma bile olmadı. Stüdyo tertemiz, tek başınasınız — kendimi VIP gibi hissettim!', d:'2 hafta önce'},
+  {n:'Selin A.', s:'Protez Tırnak', t:'İncecik, doğal protez yapan ilk yer! Herkes kendi tırnağım sanıyor. Randevu WhatsApp üzerinden 1 dakikada oluştu, hatırlatma da geldi.', d:'1 ay önce'},
+  {n:'Merve D.', s:'Jel Güçlendirme', t:'Yıllarca kırılan tırnaklarım ilk kez uzadı. Ürünler kaliteli, aletler paketli açılıyor. Hijyen konusunda aşırı titizler, içim çok rahat.', d:'3 hafta önce'},
+  {n:'Zeynep T.', s:'Nail Art', t:'Götürdüğüm referansın birebir aynısını yaptı, hatta daha güzel oldu. Fotoğraf çekim alanı bile var. Nişantaşı’nda böyle butik bir yer bulmak büyük şans.', d:'2 ay önce'},
+  {n:'Ayşe Y.', s:'Luxury Pedikür', t:'Ayak bakımı + sohbet + kahve... Resmen mini tatil. Topuklarım bebek gibi oldu. Fiyat-performans olarak İstanbul’da en iyisi bence.', d:'1 hafta önce'},
+];
+const FAQS = [
+  {q:'Russian manikür nedir, klasik manikürden farkı ne?', a:'Russian (kombine/kuru) manikürde kütikül, e-file cihazı ile su kullanılmadan, milimetrik hassasiyetle temizlenir. Kalıcı oje kütikül altına sıfır mesafede uygulanır; böylece 3-4 hafta uzama çizgisi belli olmadan, lifting ve kabarma olmadan kullanırsınız. Klasik maniküre göre çok daha pürüzsüz ve uzun ömürlüdür.'},
+  {q:'İşlem acıtıyor mu? Tırnağım incelir mi?', a:'Hayır. Doğru teknikte acı, kanama veya yanma olmaz. Tırnak plağı törpüyle inceltilmez; sadece yüzey matlaştırılır. Jel ve protezde de doğal tırnağı koruyan esnek ürünler kullanıyoruz. Hassas ciltler için HEMA-free seçeneklerimiz mevcut.'},
+  {q:'Kalıcılığı ne kadar? Garanti veriyor musunuz?', a:'Russian + kalıcı oje 3-4 hafta, jel güçlendirme 4-5 hafta, protez 4-6 hafta dayanır (kullanıma göre değişir). İlk 7 gün içinde kalkma/soyulma olursa ücretsiz düzeltme yapıyoruz. Eve bakım yağı hediye ediyoruz.'},
+  {q:'Sterilizasyon nasıl sağlanıyor?', a:'4 aşamalı hastane protokolü: dezenfektan solüsyon → ultrasonik yıkama → paketleme → otoklav (134°C basınçlı buhar). Her danışan için paket sizin yanınızda açılır. Törpü, buffer gibi sarflar tek kullanımlıktır.'},
+  {q:'Randevumu iptal / erteleyebilir miyim?', a:'Elbette. Randevudan en az 12 saat önce WhatsApp’tan yazmanız yeterli, ücretsiz erteleme yapıyoruz. 12 saatten kısa süreli iptallerde bir sonraki randevuda küçük bir fark alınır; çünkü koltuk yalnızca size ayrılıyor.'},
+  {q:'Protez tırnak doğal tırnağa zarar verir mi?', a:'Uzman uygulamada hayır. Doğru hazırlık, doğru ürün kalınlığı ve düzenli bakım (3-4 haftada bir yenileme) ile tırnaklarınız sağlıklı kalır. Çıkarma işlemini asla evde yapmayın — stüdyoda 20 dakikada zararsız söküm yapıyoruz.'},
+  {q:'Ödeme seçenekleri neler?', a:'Nakit, kredi kartı ve Havale/EFT kabul ediyoruz. İlk ziyarette ILK15 koduyla %15 indirim, iki arkadaş birlikte gelmede %10 avantaj uygulanır.'},
+];
+
+/* helpers */
+const $ = s=>document.querySelector(s);
+const $$ = s=>document.querySelectorAll(s);
+function toast(m){const t=$('#toast');$('#toastMsg').textContent=m;t.classList.remove('hidden');t.classList.add('flex');clearTimeout(t._x);t._x=setTimeout(()=>{t.classList.add('hidden');t.classList.remove('flex')},3200)}
+
+/* clock + open status */
+function tick(){
+  const now=new Date();
+  const hh=String(now.getHours()).padStart(2,'0'), mm=String(now.getMinutes()).padStart(2,'0');
+  const c=$('#liveClock'); if(c) c.textContent=hh+':'+mm;
+  const day=now.getDay(); //0 sun
+  const mins=now.getHours()*60+now.getMinutes();
+  let open=false, label='';
+  if(day===0){ open = mins>=660 && mins<1080; label = open?'Canlı Randevu Alabilirsiniz • Pazar 18:00’e kadar açığız':'Şu an kapalıyız • Yarın 10:00’da açılıyoruz'; }
+  else{ open = mins>=600 && mins<1200; label = open?'Canlı Randevu Alabilirsiniz • Bugün 20:00’ye kadar açığız':'Şu an kapalıyız • Sabah 10:00’da açılıyoruz'; }
+  const ot=$('#openText'); if(ot) ot.textContent=label;
+  const dot=$('#openDot'); if(dot){dot.classList.toggle('bg-green-400',open);dot.classList.toggle('bg-red-400',!open);dot.classList.toggle('closed',!open)}
+  const fs=$('#footerStatus'); if(fs){fs.textContent=open?'● Şu an açığız':'● Şu an kapalıyız';fs.className=open?'text-green-400 font-medium':'text-red-400 font-medium'}
+  // countdown to Saturday 20:00
+  const target=new Date(now); let add=(6-day+7)%7; if(add===0 && mins>=1200) add=7; target.setDate(now.getDate()+add); target.setHours(20,0,0,0);
+  let diff=Math.max(0,target-now); let h=Math.floor(diff/36e5), m=Math.floor(diff%36e5/6e4), s=Math.floor(diff%6e4/1e3);
+  const cd=$('#countdown'); if(cd) cd.textContent=`Cumartesi 20:00’e kadar: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+setInterval(tick,1000); tick();
+
+/* header scroll + progress + toTop */
+const header=$('#header'), prog=$('#progressBar'), toTop=$('#toTop');
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  header.classList.toggle('shadow-card',y>10);
+  const h=document.documentElement.scrollHeight-innerHeight;
+  prog.style.transform=`scaleX(${h>0?y/h:0})`;
+  if(y>600){toTop.classList.remove('hidden');toTop.classList.add('flex')}else{toTop.classList.add('hidden');toTop.classList.remove('flex')}
+  // spy
+  const secs=['anasayfa','hakkimizda','hizmetler','galeri','yorumlar','sss','iletisim'];
+  let cur='anasayfa';
+  secs.forEach(id=>{const el=document.getElementById(id); if(el && y>=el.offsetTop-140) cur=id});
+  $$('.nav-link').forEach(a=>a.classList.toggle('active',a.dataset.spy===cur));
+},{passive:true});
+toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* mobile menu */
+const mm=$('#mobileMenu'), panel=$('#menuPanel'), ov=$('#menuOverlay');
+function openMenu(){mm.classList.remove('hidden');requestAnimationFrame(()=>{ov.classList.remove('opacity-0');panel.classList.remove('translate-x-full')});document.body.style.overflow='hidden'}
+function closeMenu(){ov.classList.add('opacity-0');panel.classList.add('translate-x-full');setTimeout(()=>mm.classList.add('hidden'),380);document.body.style.overflow=''}
+$('#menuBtn').addEventListener('click',openMenu);
+$('#menuClose').addEventListener('click',closeMenu);
+ov.addEventListener('click',closeMenu);
+$$('.mob-link').forEach(a=>a.addEventListener('click',closeMenu));
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+$$('.reveal').forEach(el=>io.observe(el));
+
+/* counters */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return; const el=e.target, end=+el.dataset.count; let cur=0; const step=Math.max(1,Math.ceil(end/60));
+  const t=setInterval(()=>{cur+=step; if(cur>=end){cur=end;clearInterval(t)} el.textContent=cur.toLocaleString('tr-TR')},28); cio.unobserve(el);
+}),{threshold:.6});
+$$('[data-count]').forEach(el=>cio.observe(el));
+
+/* services render */
+let activeFilter='all', selectedService=null;
+function money(n){return '₺'+n.toLocaleString('tr-TR')}
+function renderServices(){
+  const g=$('#servicesGrid'); g.innerHTML='';
+  SERVICES.filter(s=>activeFilter==='all'||s.cat===activeFilter).forEach((s,i)=>{
+    const card=document.createElement('div');
+    card.className='reveal visible bg-white rounded-[22px] border border-beige/70 overflow-hidden shadow-card hover:shadow-luxe hover:-translate-y-1.5 transition-all duration-300 flex flex-col';
+    card.innerHTML=`
+      ${s.badge?`<div class="px-5 pt-4"><span class="text-[11px] tracking-[0.15em] uppercase font-semibold bg-anthracite text-champagne px-3 py-1.5 rounded-full">✦ ${s.badge}</span></div>`:''}
+      <div class="p-6 flex-1">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-nude to-beige flex items-center justify-center text-plum text-lg"><i class="fa-solid ${s.icon}"></i></div>
+        <h3 class="serif text-[24px] font-semibold mt-4 leading-tight">${s.name}</h3>
+        <p class="text-[13.5px] font-light text-anthracite/60 leading-relaxed mt-2">${s.desc}</p>
+        <div class="flex items-center gap-2 mt-4 text-[13px] text-anthracite/60"><span class="bg-cream border border-beige px-2.5 py-1 rounded-full"><i class="fa-regular fa-clock mr-1 text-champagne"></i>${s.dur}</span><span class="bg-cream border border-beige px-2.5 py-1 rounded-full"><i class="fa-solid fa-shield-halved mr-1 text-champagne"></i>Steril Set</span></div>
+      </div>
+      <div class="px-6 pb-6">
+        <div class="flex items-end justify-between border-t border-beige/70 pt-4">
+          <div>${s.old?`<p class="text-[12px] line-through opacity-40">₺${s.old.toLocaleString('tr-TR')}</p>`:''}<p class="serif text-[28px] font-semibold leading-none">${money(s.price)}<span class="text-[12px] font-sans font-light opacity-50"> /seans</span></p></div>
+          <button data-pick="${s.id}" class="pick-btn bg-anthracite text-white text-[13px] font-medium px-5 py-2.5 rounded-full hover:bg-[#9c7a1a] transition flex items-center gap-2">Seç <i class="fa-solid fa-arrow-right text-[11px] text-champagne"></i></button>
+        </div>
+      </div>`;
+    g.appendChild(card);
+  });
+  $$('.pick-btn').forEach(b=>b.addEventListener('click',()=>{selectService(b.dataset.pick);document.getElementById('randevu').scrollIntoView({behavior:'smooth'});toast('Seçildi: '+SERVICES.find(x=>x.id===b.dataset.pick).name)}));
+}
+$$('.f-tab').forEach(b=>b.addEventListener('click',()=>{
+  activeFilter=b.dataset.filter;
+  $$('.f-tab').forEach(x=>{x.className='f-tab px-5 py-2.5 rounded-full text-[13px] font-medium bg-white border border-beige hover:border-champagne transition'});
+  b.className='f-tab px-5 py-2.5 rounded-full text-[13px] font-medium bg-anthracite text-white transition';
+  renderServices();
+}));
+renderServices();
+
+/* service pills */
+function renderPills(){
+  const w=$('#servicePills'); w.innerHTML='';
+  SERVICES.forEach(s=>{
+    const b=document.createElement('button');
+    b.type='button'; b.dataset.id=s.id;
+    b.className='service-pill text-[13px] border border-beige bg-white rounded-full px-4 py-2 hover:border-champagne transition'+(selectedService===s.id?' selected':'');
+    b.textContent=s.name+' • '+money(s.price);
+    b.addEventListener('click',()=>selectService(s.id));
+    w.appendChild(b);
+  });
+}
+function selectService(id){
+  selectedService = selectedService===id?null:id;
+  renderPills(); updateSummary();
+  $('#serviceErr').classList.add('hidden');
+}
+renderPills();
+
+/* date + slots */
+const dateInput=$('#fDate'), slotsBox=$('#slots'), dateHint=$('#dateHint');
+const ALL_SLOTS=["10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"];
+let selectedSlot=null;
+(function(){const t=new Date(); dateInput.min=t.toISOString().split('T')[0]; const m=new Date(); m.setDate(m.getDate()+30); dateInput.max=m.toISOString().split('T')[0];})();
+function bookedFor(dateStr, slot){
+  let h=0; const s=dateStr+slot; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))%997;
+  return h%4===0; // ~25% dolu simülasyonu
+}
+function renderSlots(){
+  const v=dateInput.value; slotsBox.innerHTML=''; selectedSlot=null;
+  if(!v){dateHint.textContent='— önce tarih seçin';slotsBox.innerHTML='<p class="col-span-full text-[13px] font-light opacity-50 bg-white border border-dashed border-beige rounded-xl p-4 text-center">Takvimden bir gün seçin, müsait saatler burada listelensin.</p>';updateSummary();return}
+  const d=new Date(v+'T12:00:00');
+  const gun=d.toLocaleDateString('tr-TR',{weekday:'long',day:'numeric',month:'long'});
+  dateHint.textContent='— '+gun;
+  const today=new Date().toISOString().split('T')[0];
+  const nowM=new Date().getHours()*60+new Date().getMinutes();
+  ALL_SLOTS.forEach(sl=>{
+    const b=document.createElement('button'); b.type='button';
+    const [hh,mm]=sl.split(':').map(Number); const past = (v===today && (hh*60+mm)<=nowM+30);
+    const booked = bookedFor(v,sl);
+    b.className='slot-btn border rounded-xl py-2.5 text-[13.5px] font-medium bg-white border-beige hover:border-anthracite'+(booked||past?' booked':'');
+    b.textContent=sl; if(booked||past) b.disabled=true;
+    b.addEventListener('click',()=>{$$('.slot-btn').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');selectedSlot=sl;$('#slotErr').classList.add('hidden');updateSummary()});
+    slotsBox.appendChild(b);
+  });
+  updateSummary();
+}
+dateInput.addEventListener('change',renderSlots);
+renderSlots();
+
+/* phone mask */
+$('#fPhone').addEventListener('input',e=>{
+  let v=e.target.value.replace(/\D/g,''); if(v && !v.startsWith('0')) v='0'+v; v=v.slice(0,11);
+  let out=v; if(v.length>4) out=v.slice(0,4)+' '+v.slice(4,7); if(v.length>7) out=v.slice(0,4)+' '+v.slice(4,7)+' '+v.slice(7,9); if(v.length>9) out=v.slice(0,4)+' '+v.slice(4,7)+' '+v.slice(7,9)+' '+v.slice(9,11);
+  e.target.value=out;
+});
+['fName','fPhone','fNote'].forEach(id=>document.getElementById(id).addEventListener('input',updateSummary));
+
+function updateSummary(){
+  const s=SERVICES.find(x=>x.id===selectedService);
+  const name=$('#fName').value.trim()||'Misafirimiz';
+  const d=dateInput.value?new Date(dateInput.value+'T12:00:00').toLocaleDateString('tr-TR',{day:'numeric',month:'long',weekday:'long'}):null;
+  if(!s||!d||!selectedSlot){
+    $('#summaryText').textContent='Hizmet, tarih ve saat seçtiğinizde özet burada görünecek...';
+    $('#summaryDur').textContent='—';$('#summaryPrice').textContent='—';$('#summaryTotal').textContent='₺0';return;
+  }
+  $('#summaryText').innerHTML=`<span class="not-italic font-sans font-medium text-[15px] text-anthracite">${name}</span> • ${s.name}<br>${d} • ${selectedSlot}`;
+  $('#summaryDur').textContent=s.dur;$('#summaryPrice').textContent=money(s.price);$('#summaryTotal').textContent=money(s.price);
+}
+
+/* submit */
+$('#bookForm').addEventListener('submit',e=>{
+  e.preventDefault(); let ok=true;
+  const name=$('#fName'), phone=$('#fPhone');
+  const mark=(el,bad)=>{el.classList.toggle('error',bad);el.parentElement.querySelector('.err')?.classList.toggle('hidden',!bad);if(bad)ok=false};
+  mark(name, name.value.trim().length<3);
+  mark(phone, phone.value.replace(/\D/g,'').length!==11);
+  if(!selectedService){$('#serviceErr').classList.remove('hidden');ok=false}
+  if(!dateInput.value){dateInput.classList.add('error');dateInput.parentElement.querySelector('.err').classList.remove('hidden');ok=false}else{dateInput.classList.remove('error');dateInput.parentElement.querySelector('.err').classList.add('hidden')}
+  if(!selectedSlot){$('#slotErr').classList.remove('hidden');ok=false}
+  if(!$('#fKvkk').checked){toast('Devam etmek için KVKK onayı gerekli.');ok=false}
+  if(!ok){toast('Lütfen eksik alanları kontrol edin.');return}
+  const s=SERVICES.find(x=>x.id===selectedService);
+  const d=new Date(dateInput.value+'T12:00:00').toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric',weekday:'long'});
+  const note=$('#fNote').value.trim();
+  const msg=`Merhaba Nailed It! 💅 Randevu almak istiyorum.%0A%0A• İsim: ${encodeURIComponent(name.value.trim())}%0A• Telefon: ${encodeURIComponent(phone.value)}%0A• Hizmet: ${encodeURIComponent(s.name+' ('+money(s.price)+')')}%0A• Tarih: ${encodeURIComponent(d)}%0A• Saat: ${encodeURIComponent(selectedSlot)}${note?'%0A• Not: '+encodeURIComponent(note):''}%0A%0ATeyit edebilir misiniz? Teşekkürler ✨`;
+  const url=`https://wa.me/${WA_NUMBER}?text=${msg}`;
+  $('#successDetail').innerHTML=`<strong>${name.value.trim()}</strong> • ${phone.value}<br>💅 ${s.name}<br>📅 ${d} • ⏰ ${selectedSlot}<br>💰 ${money(s.price)} • ⏳ ${s.dur}${note?'<br>📝 '+note:''}`;
+  $('#successWa').href=url;
+  const m=$('#successModal'); m.classList.remove('hidden');m.classList.add('flex');document.body.style.overflow='hidden';
+  window.open(url,'_blank');
+});
+$$('[data-close-s]').forEach(b=>b.addEventListener('click',()=>{const m=$('#successModal');m.classList.add('hidden');m.classList.remove('flex');document.body.style.overflow=''}));
+
+/* FAQ */
+function renderFaq(){
+  const w=$('#faqList'); w.innerHTML='';
+  FAQS.forEach((f,i)=>{
+    const d=document.createElement('div');
+    d.className='faq-item bg-cream border border-beige rounded-2xl overflow-hidden'+(i===0?' open':'');
+    d.innerHTML=`<button class="w-full flex items-center gap-4 p-5 text-left"><span class="w-8 h-8 rounded-full bg-white border border-beige flex items-center justify-center serif font-bold text-champagne shrink-0">${i+1}</span><span class="flex-1 font-medium text-[15px] sm:text-[16px]">${f.q}</span><span class="faq-icon w-9 h-9 rounded-full border border-beige bg-white flex items-center justify-center shrink-0"><i class="fa-solid fa-plus text-sm"></i></span></button><div class="faq-answer"><p class="px-5 pb-5 pl-[68px] text-[14px] font-light text-anthracite/70 leading-relaxed">${f.a}</p></div>`;
+    d.querySelector('button').addEventListener('click',()=>{
+      const was=d.classList.contains('open');
+      $$('.faq-item').forEach(x=>x.classList.remove('open'));
+      if(!was) d.classList.add('open');
+    });
+    w.appendChild(d);
+  });
+}
+renderFaq();
+
+/* testimonials */
+let tIdx=0;
+function visibleCount(){return innerWidth>=1024?3:innerWidth>=640?2:1}
+function renderTesti(){
+  const tr=$('#tTrack'); tr.innerHTML='';
+  TESTIS.forEach(r=>{
+    const ini=r.n.split(' ').map(x=>x[0]).join('');
+    const el=document.createElement('div');
+    el.className='shrink-0 px-2';
+    el.style.minWidth=(100/visibleCount())+'%';
+    el.innerHTML=`<div class="bg-white border border-beige/70 rounded-[22px] p-6 shadow-card h-full flex flex-col">
+      <div class="text-champagne text-sm tracking-[0.15em]">★★★★★</div>
+      <p class="text-[14px] font-light leading-relaxed mt-3 flex-1">“${r.t}”</p>
+      <div class="flex items-center gap-3 mt-5 pt-4 border-t border-beige/60">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-anthracite to-plum text-champagne flex items-center justify-center font-serif font-bold">${ini}</div>
+        <div class="flex-1"><p class="font-medium text-[14px]">${r.n}</p><p class="text-[12px] opacity-50 font-light">${r.s} • ${r.d}</p></div>
+        <i class="fa-brands fa-google text-[18px] opacity-30"></i>
+      </div></div>`;
+    tr.appendChild(el);
+  });
+  renderDots();
+}
+function renderDots(){
+  const pages=Math.ceil(TESTIS.length/visibleCount());
+  const d=$('#tDots'); d.innerHTML='';
+  for(let i=0;i<pages;i++){const b=document.createElement('button');b.className='h-2 rounded-full transition-all '+(i===tIdx?'w-8 bg-anthracite':'w-2 bg-beige');b.addEventListener('click',()=>{tIdx=i;moveT()});d.appendChild(b)}
+}
+function moveT(){
+  const pages=Math.ceil(TESTIS.length/visibleCount());
+  if(tIdx>=pages)tIdx=0; if(tIdx<0)tIdx=pages-1;
+  $('#tTrack').style.transform=`translateX(-${tIdx*100}%)`; renderDots();
+}
+$('#tNext').addEventListener('click',()=>{tIdx++;moveT();resetAuto()});
+$('#tPrev').addEventListener('click',()=>{tIdx--;moveT();resetAuto()});
+let auto=setInterval(()=>{tIdx++;moveT()},4500);
+function resetAuto(){clearInterval(auto);auto=setInterval(()=>{tIdx++;moveT()},4500)}
+renderTesti(); moveT();
+addEventListener('resize',()=>{renderTesti();moveT()});
+/* touch swipe */
+let sx=null; const track=$('#tTrack');
+track.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+track.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){dx<0?tIdx++:tIdx--;moveT();resetAuto()}sx=null},{passive:true});
+
+/* lightbox */
+const lb=$('#lightbox'), lbImg=$('#lbImg'); let lbIdx=0; const gImgs=[...$$('.g-item')];
+function openLb(i){lbIdx=(i+gImgs.length)%gImgs.length;lbImg.src=gImgs[lbIdx].dataset.src;lb.classList.remove('hidden');lb.classList.add('flex');document.body.style.overflow='hidden'}
+function closeLb(){lb.classList.add('hidden');lb.classList.remove('flex');document.body.style.overflow=''}
+gImgs.forEach((b,i)=>b.addEventListener('click',()=>openLb(i)));
+$('#lbPrev').addEventListener('click',e=>{e.stopPropagation();openLb(lbIdx-1)});
+$('#lbNext').addEventListener('click',e=>{e.stopPropagation();openLb(lbIdx+1)});
+$$('#lightbox [data-close]').forEach(b=>b.addEventListener('click',closeLb));
+addEventListener('keydown',e=>{if(lb.classList.contains('hidden'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')openLb(lbIdx+1);if(e.key==='ArrowLeft')openLb(lbIdx-1)});
+
+/* newsletter */
+$('#newsForm').addEventListener('submit',e=>{e.preventDefault();const v=$('#newsInput').value;if(!v.includes('@')){toast('Geçerli bir e-posta girin.');return}$('#newsInput').value='';toast('Teşekkürler! Kampanyalardan ilk siz haberdar olacaksınız ✨')});
+</script>
+</body>
+</html>
